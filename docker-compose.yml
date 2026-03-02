@@ -1,4 +1,4 @@
-Этот файл описывает два сервиса: mysql-master и mysql-slave
+# Этот файл описывает два сервиса: mysql-master и mysql-slave
 
 version: '3.8'
 
