@@ -1,0 +1,50 @@
+# Этот docker-compose.yml для Master-Master
+
+services:
+  mysql-master:
+    image: mysql:8.0
+    container_name: mysql-master
+    environment:
+      MYSQL_ROOT_PASSWORD: "ваш пароль"
+    ports:
+      - "3306:3306"
+    volumes:
+      - master-data:/var/lib/mysql
+    command: >
+      --server-id=1
+      --log-bin=mysql-bin
+      --binlog-format=ROW
+      --auto-increment-offset=1
+      --auto-increment-increment=2
+      --default-authentication-plugin=mysql_native_password
+    networks:
+      - mysql-network
+
+  mysql-slave:
+    image: mysql:8.0
+    container_name: mysql-slave
+    environment:
+      MYSQL_ROOT_PASSWORD: "ваш пароль"
+    ports:
+      - "3307:3306"
+    volumes:
+      - slave-data:/var/lib/mysql
+    command: >
+      --server-id=2
+      --log-bin=mysql-bin
+      --binlog-format=ROW
+      --auto-increment-offset=2
+      --auto-increment-increment=2
+      --default-authentication-plugin=mysql_native_password
+    networks:
+      - mysql-network
+    depends_on:
+      - mysql-master
+
+volumes:
+  master-data:
+  slave-data:
+
+networks:
+  mysql-network:
+    driver: bridge
