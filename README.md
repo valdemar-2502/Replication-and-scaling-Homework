@@ -86,6 +86,10 @@
 ---
 ### Решение
 ---
+При выполнении задания использовалась docker compose конфигурация
+![config-docker-compose.yml-1](https://github.com/valdemar-2502/Replication-and-scaling-Homework/blob/main/docker-compose.yml-1)
+
+---
 ![database](https://github.com/valdemar-2502/Replication-and-scaling-Homework/blob/main/Screenshots/install.png)
 ![database](https://github.com/valdemar-2502/Replication-and-scaling-Homework/blob/main/Screenshots/master.png)
 ![database](https://github.com/valdemar-2502/Replication-and-scaling-Homework/blob/main/Screenshots/master-base.png)
