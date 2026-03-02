@@ -86,7 +86,7 @@
 ---
 ### Решение
 ---
-При выполнении задания использовалась docker compose конфигурация
+При выполнении задания использовалась docker compose конфигурация для master-slave репликации
 ![config-docker-compose.yml-1](https://github.com/valdemar-2502/Replication-and-scaling-Homework/blob/main/docker-compose.yml-1)
 
 ---
@@ -110,6 +110,10 @@
 
 ---
 ### Решение
+---
+А при выполнении этого задания использовался измененный конфиг docker compose для master-master репликации
+![config-docker-compose.yml-2](https://github.com/valdemar-2502/Replication-and-scaling-Homework/blob/main/docker-compose.yml-2)
+
 ---
 ![database](https://github.com/valdemar-2502/Replication-and-scaling-Homework/blob/main/Screenshots/master-slave3.png)
 ![database](https://github.com/valdemar-2502/Replication-and-scaling-Homework/blob/main/Screenshots/slave-master3.png)
