@@ -83,20 +83,16 @@
 
 *Приложите скриншоты конфигурации, выполнения работы: состояния и режимы работы серверов.*
 
+---
+### Решение
+---
 ![database](https://github.com/valdemar-2502/Replication-and-scaling-Homework/blob/main/Screenshots/install.png)
 ![database](https://github.com/valdemar-2502/Replication-and-scaling-Homework/blob/main/Screenshots/master.png)
 ![database](https://github.com/valdemar-2502/Replication-and-scaling-Homework/blob/main/Screenshots/master-base.png)
 ![database](https://github.com/valdemar-2502/Replication-and-scaling-Homework/blob/main/Screenshots/slave.png)
 ![database](https://github.com/valdemar-2502/Replication-and-scaling-Homework/blob/main/Screenshots/slave-base.png)
-![database](https://github.com/valdemar-2502/Replication-and-scaling-Homework/blob/main/Screenshots/master-slave3.png)
-![database](https://github.com/valdemar-2502/Replication-and-scaling-Homework/blob/main/Screenshots/slave-master3.png)
-![database](https://github.com/valdemar-2502/Replication-and-scaling-Homework/blob/main/Screenshots/status%20slave-master3.png)
-![database](https://github.com/valdemar-2502/Replication-and-scaling-Homework/blob/main/Screenshots/master-finish.png)
-![database](https://github.com/valdemar-2502/Replication-and-scaling-Homework/blob/main/Screenshots/slave-finish.png)
-![database](https://github.com/valdemar-2502/Replication-and-scaling-Homework/blob/main/Screenshots/slave%20master-master3.png)
 
 ---
-
 ## Дополнительные задания (со звёздочкой*)
 Эти задания дополнительные, то есть не обязательные к выполнению, и никак не повлияют на получение вами зачёта по этому домашнему заданию. Вы можете их выполнить, если хотите глубже шире разобраться в материале.
 
@@ -107,3 +103,13 @@
 Выполните конфигурацию master-master репликации. Произведите проверку.
 
 *Приложите скриншоты конфигурации, выполнения работы: состояния и режимы работы серверов.*
+
+---
+### Решение
+---
+![database](https://github.com/valdemar-2502/Replication-and-scaling-Homework/blob/main/Screenshots/master-slave3.png)
+![database](https://github.com/valdemar-2502/Replication-and-scaling-Homework/blob/main/Screenshots/slave-master3.png)
+![database](https://github.com/valdemar-2502/Replication-and-scaling-Homework/blob/main/Screenshots/status%20slave-master3.png)
+![database](https://github.com/valdemar-2502/Replication-and-scaling-Homework/blob/main/Screenshots/slave%20master-master3.png)
+![database](https://github.com/valdemar-2502/Replication-and-scaling-Homework/blob/main/Screenshots/master-finish.png)
+![database](https://github.com/valdemar-2502/Replication-and-scaling-Homework/blob/main/Screenshots/slave-finish.png)
