@@ -1,0 +1,45 @@
+version: '3.8'
+
+services:
+  mysql-master:
+    image: mysql:8.0
+    container_name: mysql-master
+    environment:
+      MYSQL_ROOT_PASSWORD: "ваш пароль"
+    ports:
+      - "3306:3306"
+    volumes:
+      - master-data:/var/lib/mysql
+    command: >
+      --server-id=1
+      --log-bin=mysql-bin
+      --binlog-format=ROW
+    networks:
+      - mysql-network
+
+  mysql-slave:
+    image: mysql:8.0
+    container_name: mysql-slave
+    environment:
+      MYSQL_ROOT_PASSWORD: "ваш пароль"
+    ports:
+      - "3307:3306"
+    volumes:
+      - slave-data:/var/lib/mysql
+    command: >
+      --server-id=2
+      --relay-log=mysql-relay-bin
+      --read-only=1
+      --log-slave-updates=1
+    networks:
+      - mysql-network
+    depends_on:
+      - mysql-master
+
+volumes:
+  master-data:
+  slave-data:
+
+networks:
+  mysql-network:
+    driver: bridge
